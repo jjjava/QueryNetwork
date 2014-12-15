@@ -11,6 +11,7 @@ import java.net.Socket;
 public class HighPortScanner {
 
     public static void main(String[] args) {
+        System.out.println("Start");
         String host = "localhost";
         try {
             InetAddress theAddress = InetAddress.getByName(host);
@@ -21,5 +22,6 @@ public class HighPortScanner {
         } catch (IOException ex) {
             System.err.println(ex);
         }
+        System.out.println("End");
     }
 }

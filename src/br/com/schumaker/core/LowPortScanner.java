@@ -17,6 +17,7 @@ public class LowPortScanner {
 
     public static void main(String[] args) {
         String host = "localhost";
+        System.out.println("Start");
         for (int i = 1; i < 1024; i++) {
             try {
                 Socket s = new Socket(host, i);
@@ -28,5 +29,6 @@ public class LowPortScanner {
                 System.err.println(ex);
             }
         }
+        System.out.println("End");
     }
 }
